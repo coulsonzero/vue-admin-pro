@@ -1,6 +1,5 @@
 <template>
   <div class="glass glass-wrapper">
-    <div>hello</div>
   </div>
 </template>
 
