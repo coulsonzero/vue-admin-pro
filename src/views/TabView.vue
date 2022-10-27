@@ -14,5 +14,6 @@ import Tab from "@/components/Tab/Tab.vue";
 <style>
 .view-wrapper {
   color: #fff;
+  width: 100vw;
 }
 </style>
