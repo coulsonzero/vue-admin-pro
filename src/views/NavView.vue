@@ -1,4 +1,5 @@
 <template>
+  <image-bg></image-bg>
   <header>
     <div class="wrapper">
       <h1>向 未来 航行</h1>
@@ -18,8 +19,10 @@
 <script>
 import routes from "@/router/routes";
 import { RouterLink } from "vue-router";
+import ImageBg from '../components/Animate/ImageBg.vue';
 
 export default {
+  components: { ImageBg },
   computed: {
     links() {
       return routes.filter((item) => item.path !== "/");

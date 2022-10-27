@@ -1,5 +1,5 @@
 <template>
-  <div class="chart-wrapper chart-container">
+  <div class="chart-wrapper chart-container glass-blur">
     <!-- <div class="chart-container"> -->
     <div class="chart-info">
       <div class="chart-title">Applications</div>
@@ -82,11 +82,18 @@ export default {
   --circle-bg: #557b88;
 } */
 
+.glass-blur {
+  background: rgba(40, 41, 42, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+  border-top: .2px solid #323232;
+  border-left: .2px solid #323232;
+  box-shadow: 2px 2px 6px rgba(1, 5, 16, .8);
+}
 .chart-wrapper {
   width: 280px;
   height: 130px;
   padding: 8px;
-  background: #000720;
   margin: 20px;
 
   &.chart-container {

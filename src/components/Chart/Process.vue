@@ -1,6 +1,6 @@
 <template>
   <div class="process-wrapper">
-    <div class="chart-container">
+    <div class="chart-container glass-blur">
       <div class="chart-container-header">
         <div>Acquisitions</div>
         <span href="#">This month</span>
@@ -42,13 +42,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.glass-blur {
+  background: rgba(40, 41, 42, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+  border-top: .2px solid #323232;
+  border-left: .2px solid #323232;
+  box-shadow: 2px 2px 6px rgba(1, 5, 16, .8);
+}
+
 .process-wrapper {
   color: #fff;
   margin: 20px;
   .chart-container {
     width: 300px;
     border-radius: 10px;
-    background-color: #01081f;
+    /* background-color: #01081f; */
     padding: 16px;
     display: flex;
     align-items: center;

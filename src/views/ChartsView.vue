@@ -1,4 +1,5 @@
 <template>
+  <image-bg></image-bg>
   <div class="page-section">
     <div class="title">Charts Demo</div>
 
@@ -30,6 +31,7 @@
 import ChartCircle from "@/components/Chart/Circle.vue";
 import ChartProcess from "@/components/Chart/Process.vue";
 import Glass from "@/components/Box/Glass.vue";
+import ImageBg from '../components/Animate/ImageBg.vue';
 </script>
 
 <style lang="scss" scoped>
