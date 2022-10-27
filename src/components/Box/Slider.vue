@@ -1,11 +1,11 @@
 <template>
   <div class="slider-text">
-    Turn your living room into
+    Detailed code can be viewed on
     <div class="mask">
-      <span data-show="">a theater.</span>
-      <span>a gym.</span>
-      <span>a concert hall.</span>
-      <span data-up="">an arcade.</span>
+      <span data-show="">github.</span>
+      <span>CodePen.</span>
+      <span>Gitee.</span>
+      <span data-up="">Contact us.</span>
     </div>
   </div>
 </template>
@@ -13,10 +13,10 @@
 <script>
 export default {
   mounted() {
-    this.slider();
+    this.sliderChange();
   },
   methods: {
-    slider() {
+    sliderChange() {
       setInterval(function () {
         const show = document.querySelector("span[data-show]");
         const next =
@@ -49,12 +49,16 @@ body {
 }
 
 .slider-text {
-  width: 100%;
+  width: 94%;
   font-size: 100px;
   font-family: Helvetica;
   line-height: 1.06;
   letter-spacing: -0.02em;
   color: #626263;
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 .mask {

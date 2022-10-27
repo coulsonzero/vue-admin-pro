@@ -19,13 +19,15 @@
 <script>
 import routes from "@/router/routes";
 import { RouterLink } from "vue-router";
-import ImageBg from '../components/Animate/ImageBg.vue';
+import ImageBg from "../components/Animate/ImageBg.vue";
 
 export default {
   components: { ImageBg },
   computed: {
     links() {
-      return routes.filter((item) => item.path !== "/");
+      return routes.filter(
+        (item) => item.path !== "/" && !item.path.includes("(.*)")
+      );
     },
   },
 };
@@ -41,7 +43,8 @@ header {
 header h1 {
   color: #fff;
   text-align: center;
-  font-family: Arial, sans-serif !important;
+  font-family: serif;
+  margin-bottom: 60px;
 }
 
 .nav-router {

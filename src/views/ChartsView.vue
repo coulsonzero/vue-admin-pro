@@ -1,5 +1,8 @@
 <template>
   <image-bg></image-bg>
+
+  <nav-back></nav-back>
+
   <div class="page-section">
     <div class="title">Charts Demo</div>
 
@@ -17,6 +20,11 @@
         :percent="90"
         :color="{ circle_color: '#ff9f00', circle_bg: '#776547' }"
       />
+
+      <chart-circle
+        :percent="16"
+        :color="{ circle_color: '#ff9f00', circle_bg: '#776547' }"
+      />
     </div>
 
     <div class="flex-container">
@@ -31,7 +39,8 @@
 import ChartCircle from "@/components/Chart/Circle.vue";
 import ChartProcess from "@/components/Chart/Process.vue";
 import Glass from "@/components/Box/Glass.vue";
-import ImageBg from '../components/Animate/ImageBg.vue';
+import ImageBg from "@/components/Animate/ImageBg.vue";
+import NavBack from "@/components/Button/NavBack.vue";
 </script>
 
 <style lang="scss" scoped>

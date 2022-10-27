@@ -1,5 +1,6 @@
 <template>
-  <div class="view-wrapper">
+  <div class="view-containerr">
+    <nav-back></nav-back>
     <image-bg></image-bg>
 
     <Tab />
@@ -11,9 +12,10 @@ import ImageBg from "@/components/Animate/ImageBg.vue";
 import Tab from "@/components/Tab/Tab.vue";
 </script>
 
-<style>
-.view-wrapper {
+<style lang="scss" scoped>
+.view-container {
   color: #fff;
-  width: 100vw;
+  width: 100%;
+  height: 100vh;
 }
-</style>
+</style>>

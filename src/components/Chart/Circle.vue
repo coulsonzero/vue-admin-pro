@@ -84,17 +84,21 @@ export default {
 
 .glass-blur {
   background: rgba(40, 41, 42, 0.2);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(5px);
-  border-top: .2px solid #323232;
-  border-left: .2px solid #323232;
-  box-shadow: 2px 2px 6px rgba(1, 5, 16, .8);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(8px);
+  border-top: 0.2px solid #323232;
+  border-left: 0.2px solid #323232;
+  box-shadow: 2px 2px 6px rgba(1, 5, 16, 0.8);
 }
 .chart-wrapper {
   width: 280px;
   height: 130px;
   padding: 8px;
   margin: 20px;
+
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: default;
 
   &.chart-container {
     display: flex;
@@ -141,6 +145,10 @@ export default {
     stroke-linecap: round;
     -webkit-animation: progress 1.5s ease-out forwards;
     animation: progress 1.5s ease-out forwards;
+  }
+
+  .circle-bg {
+    fill-opacity: 0;
   }
 
   .percentage {
