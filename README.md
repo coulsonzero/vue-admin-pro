@@ -46,3 +46,9 @@ const router = createRouter({
 // package.json
 "docker": "docker-compose up --build -d nginx-app"
 ```
+
+
+## FAQ
+
+### yarn deploy 部署后出现 TypeError: importing a module script failed
+

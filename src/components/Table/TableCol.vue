@@ -15,9 +15,9 @@
       </div>
       <div class="table-cell">{{ item.file_size }}</div>
       <div class="table-cell">{{ item.update_time }}</div>
-      <div class="table-cell action-cell">
-        <button class="more-action">{{ item.action }}</button>
-      </div>
+      <!-- <div class="table-cell action-cell"> -->
+        <!-- <button class="more-action">{{ item.action }}</button> -->
+      <!-- </div> -->
     </div>
   </div>
 </template>
@@ -29,7 +29,7 @@ export default {
       { title: "Name", dataIndex: "name" },
       { title: "Size", dataIndex: "size" },
       { title: "Last Modified", dataIndex: "last_modified" },
-      { title: "Action", dataIndex: "action" },
+      // { title: "Action", dataIndex: "action" },
     ],
     tableData: [
       {

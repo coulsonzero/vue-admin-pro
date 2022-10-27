@@ -1,9 +1,8 @@
 <template>
   <div class="view-wrapper">
+    <table-line />
 
-    <table-line></table-line>
-
-    <table-col></table-col>
+    <table-col />
   </div>
 </template>
 

@@ -18,9 +18,11 @@
       />
     </div>
 
-    <chart-process></chart-process>
+    <div class="flex-container">
+      <chart-process></chart-process>
 
-    <Glass></Glass>
+      <Glass></Glass>
+    </div>
   </div>
 </template>
 
@@ -31,10 +33,14 @@ import Glass from "@/components/Box/Glass.vue";
 </script>
 
 <style lang="scss">
+.page-section {
+  width: 100vw;
+  min-height: 100vh;
+}
+
 .title {
   margin: 20px;
 }
-
 
 .flex-container {
   display: flex;
