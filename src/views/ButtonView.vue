@@ -1,16 +1,12 @@
 <template>
   <div class="wrapper">
-    <video-bg></video-bg>
     <h3>Button Demo</h3>
     <my-button></my-button>
-    <load-demo></load-demo>
   </div>
 </template>
 
 <script setup>
-import VideoBg from "@/components/Animate/VideoBg.vue";
 import MyButton from "@/components/Button/MyButton.vue";
-import LoadDemo from "@/components/Animate/LoadDemo.vue";
 </script>
 
 

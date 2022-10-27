@@ -1,5 +1,4 @@
 <template>
-  <video-bg></video-bg>
   <header>
     <div class="wrapper">
       <h1>Nav</h1>
@@ -19,13 +18,8 @@
 <script>
 import routes from "@/router/routes";
 import { RouterLink } from "vue-router";
-import VideoBg from "@/components/Animate/VideoBg.vue";
 
 export default {
-  components: { VideoBg },
-  created() {
-    // console.log(routes);
-  },
   computed: {
     links() {
       return routes.filter((item) => item.path !== "/");

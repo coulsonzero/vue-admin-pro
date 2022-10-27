@@ -1,8 +1,6 @@
 # 确保脚本抛出遇到的错误
 set -e
 
-rm -rf dist
-
 # 生成静态文件
 yarn build
 
@@ -21,3 +19,5 @@ git commit -m 'deploy vue-admin-pro'
 git push -f git@github.com:coulsonzero/vue-admin-pro.git master:gh-pages
 
 cd -
+
+rm -rf dist

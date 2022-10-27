@@ -1,6 +1,5 @@
 <template>
   <div class="view-wrapper">
-    <video-bg></video-bg>
 
     <table-line></table-line>
 
@@ -9,7 +8,6 @@
 </template>
 
 <script setup>
-import VideoBg from "@/components/Animate/VideoBg.vue";
 import TableLine from "@/components/Table/TableLine.vue";
 import TableCol from "@/components/Table/TableCol.vue";
 </script>

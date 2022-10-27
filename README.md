@@ -35,7 +35,14 @@ const router = createRouter({
 
 ### deploy
 
-#### package.json
+
 ```json
+// package.json
 "deploy": "bash deploy.sh"
+```
+
+### docker
+```json
+// package.json
+"docker": "docker-compose up --build -d nginx-app"
 ```
