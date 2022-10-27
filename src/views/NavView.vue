@@ -1,5 +1,6 @@
 <template>
   <image-bg></image-bg>
+  <setting-button></setting-button>
   <header>
     <div class="wrapper">
       <h1>向 未来 航行</h1>
@@ -20,9 +21,10 @@
 import routes from "@/router/routes";
 import { RouterLink } from "vue-router";
 import ImageBg from "../components/Animate/ImageBg.vue";
+import SettingButton from '../components/Button/SettingButton.vue';
 
 export default {
-  components: { ImageBg },
+  components: { ImageBg, SettingButton },
   computed: {
     links() {
       return routes.filter(
