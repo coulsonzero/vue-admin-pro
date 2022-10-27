@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="wrapper">
-      <h1>Nav</h1>
+      <h1>向 未来 航行</h1>
       <nav class="nav-router">
         <router-link
           :to="item.path"
@@ -38,6 +38,7 @@ header {
 header h1 {
   color: #fff;
   text-align: center;
+  font-family: Arial, sans-serif !important;
 }
 
 .nav-router {
@@ -51,6 +52,8 @@ header h1 {
   color: #fff;
   transition: all 0.15s ease;
   letter-spacing: 1.5px;
+  user-select: none;
+  -webkit-user-select: none;
 }
 .nav-item:hover {
   color: #5d8bc0;
