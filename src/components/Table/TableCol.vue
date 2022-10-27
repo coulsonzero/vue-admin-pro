@@ -94,12 +94,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+$blur: 20px;
+$bg: rgba(255, 255, 255, .2);
 /* max-width: 50%; */
 .custom-table {
   margin: 30px 60px 60px;
-  background: rgba(211, 211, 211, 0.5);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  /* background: rgba(211, 211, 211, 0.5); */
+  /* backdrop-filter: blur(10px); */
+  /* -webkit-backdrop-filter: blur(10px); */
+  background: $bg;
+   backdrop-filter: blur($blur);
+  -webkit-backdrop-filter: blur($blur);
   box-shadow: 0 2px 6px 0 rgb(136 148 171 / 20%),
     0 24px 20px -24px rgb(71 82 107 / 10%);
   border-radius: 12px;
