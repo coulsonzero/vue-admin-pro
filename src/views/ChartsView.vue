@@ -32,14 +32,15 @@ import ChartProcess from "@/components/Chart/Process.vue";
 import Glass from "@/components/Box/Glass.vue";
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .page-section {
   width: 100vw;
   min-height: 100vh;
 }
 
 .title {
-  margin: 20px;
+  margin: 40px;
+  font-size: 40px;
 }
 
 .flex-container {

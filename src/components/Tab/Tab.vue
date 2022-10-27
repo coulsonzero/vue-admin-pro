@@ -20,7 +20,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .tab-wrapper {
   position: relative;
   display: flex;

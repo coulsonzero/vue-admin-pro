@@ -17,5 +17,6 @@ export default defineConfig({
 	},
 	preview: {
 		port: 3900,
+    open: true,
 	},
 })

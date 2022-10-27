@@ -1,6 +1,6 @@
 <template>
   <div class="table-wrapper">
-    <h2 class="table-title">Becklyn Basics</h2>
+    <div class="table-title">Becklyn Basics</div>
     <ul>
       <li class="table-row-wrapper" v-for="(item, index) in tableData" :key="index">
         <div class="table-row">
@@ -54,6 +54,7 @@ export default {
 
 .table-title {
   margin-bottom: 3rem;
+  font-size: 2rem;
 }
 
 .table-row-wrapper {

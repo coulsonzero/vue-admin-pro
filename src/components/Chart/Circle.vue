@@ -2,7 +2,7 @@
   <div class="chart-wrapper chart-container">
     <!-- <div class="chart-container"> -->
     <div class="chart-info">
-      <h2>Applications</h2>
+      <div class="chart-title">Applications</div>
       <span>20.5 K</span>
     </div>
     <div class="chart-svg">
@@ -76,18 +76,18 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 /* :root {
   --circle-color: #00cfde;
   --circle-bg: #557b88;
 } */
 
 .chart-wrapper {
-  width: 260px;
+  width: 280px;
   height: 130px;
   padding: 8px;
   background: #000720;
-  margin: 20px 20px 20px 0;
+  margin: 20px;
 
   &.chart-container {
     display: flex;
@@ -103,13 +103,14 @@ export default {
     color: #fff;
   }
 
-  .chart-info h2 {
+  .chart-title {
     color: #5e6a81;
     font-size: 12px;
     line-height: 16px;
     font-weight: 600;
     text-transform: uppercase;
     margin: 0 0 8px 0;
+    width: 160px;
   }
 
   .chart-info span {

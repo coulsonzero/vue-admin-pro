@@ -16,7 +16,7 @@
       <div class="table-cell">{{ item.file_size }}</div>
       <div class="table-cell">{{ item.update_time }}</div>
       <!-- <div class="table-cell action-cell"> -->
-        <!-- <button class="more-action">{{ item.action }}</button> -->
+      <!-- <button class="more-action">{{ item.action }}</button> -->
       <!-- </div> -->
     </div>
   </div>
@@ -93,7 +93,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 /* max-width: 50%; */
 .custom-table {
   margin: 30px 60px 60px;

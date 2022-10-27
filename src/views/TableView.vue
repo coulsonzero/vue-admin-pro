@@ -1,5 +1,5 @@
 <template>
-  <div class="view-wrapper">
+  <div>
     <table-line />
 
     <table-col />
@@ -12,7 +12,4 @@ import TableCol from "@/components/Table/TableCol.vue";
 </script>
 
 <style>
-.view-wrapper {
-  color: #fff;
-}
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <h2>
+  <div class="slider-text">
     Turn your living room into
     <div class="mask">
       <span data-show="">a theater.</span>
@@ -7,7 +7,7 @@
       <span>a concert hall.</span>
       <span data-up="">an arcade.</span>
     </div>
-  </h2>
+  </div>
 </template>
 
 <script>
@@ -48,13 +48,13 @@ body {
   min-height: 100vh;
 }
 
-h2 {
-  width: 980px;
+.slider-text {
+  width: 100%;
   font-size: 100px;
   font-family: Helvetica;
   line-height: 1.06;
   letter-spacing: -0.02em;
-  color: #1d1d1f;
+  color: #626263;
 }
 
 .mask {

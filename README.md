@@ -17,6 +17,7 @@ base: "./",
 // },
 // preview: {
 //     port: 3700,
+//     open: true,
 // },
 ```
 

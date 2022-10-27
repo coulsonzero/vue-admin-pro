@@ -41,7 +41,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .process-wrapper {
   color: #fff;
   margin: 20px;

@@ -34,7 +34,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .sidebar-wrapper {
   width: 20%;
   height: 100%;
