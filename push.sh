@@ -7,7 +7,7 @@ git status
 read -t 40 -p "[master] Enter commit >>> " message
 if [ "$message" != "" ]; then
   git commit -m "[update]: $message"
-  git pull origin master
+  git pull 
   git push origin master
   exit 0
 else

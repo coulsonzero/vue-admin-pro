@@ -6,6 +6,7 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"deploy": "bash deploy.sh",
+    "push": "bash push.sh",
 		"docker": "docker-compose up --build -d nginx-app"
 	},
 	"dependencies": {

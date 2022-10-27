@@ -13,9 +13,9 @@ export default defineConfig({
   },
   base: "./",
 	server: {
-		port: 3700,
+		port: 3900,
 	},
 	preview: {
-		port: 3700,
+		port: 3900,
 	},
 })
