@@ -1,9 +1,9 @@
 <template>
   <image-bg></image-bg>
-  <setting-button></setting-button>
+  <!-- <setting-button></setting-button> -->
   <header>
     <div class="wrapper">
-      <h1>向 未来 航行</h1>
+      <h1>最 美 夜 航 星</h1>
       <nav class="nav-router glass-nav">
         <router-link
           :to="item.path"
@@ -21,15 +21,16 @@
 import routes from "@/router/routes";
 import { RouterLink } from "vue-router";
 import ImageBg from "../components/Animate/ImageBg.vue";
-import SettingButton from '../components/Button/SettingButton.vue';
+// import SettingButton from '../components/Button/SettingButton.vue';
 
 export default {
-  components: { ImageBg, SettingButton },
   computed: {
     links() {
-      return routes.filter(
-        (item) => item.path !== "/" && !item.path.includes("(.*)")
-      );
+      return routes.filter((item) => {
+        return (
+          item.path !== "/" && !item.path.includes("(.*)") && item.path !== "/nav"
+        );
+      });
     },
   },
 };
@@ -81,8 +82,6 @@ header h1 {
   color: #5d8bc0;
   background: #39393982;
 }
-
-
 
 h1,
 .nav-router {

@@ -40,12 +40,12 @@ const routes = [
 	//   name: "about",
 	//   component: () => import("@/views/AboutView.vue"),
 	// },
-	// {
-	//   path: "/button",
-	//   name: "button",
-	//   // lazy-loaded
-	//   component: () => import("@/views/ButtonView.vue"),
-	// },
+	{
+	  path: "/button",
+	  name: "button",
+	  // lazy-loaded
+	  component: () => import("@/views/ButtonView.vue"),
+	},
 	// {
 	//   path: "/sidebar",
 	//   name: "sidebar",

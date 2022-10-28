@@ -1,8 +1,8 @@
 <template>
   <div class="setting-btn-wrapper">
-    <a href="#" class="union-btn glass-effect w-inline-block"
-      ><div class="sr-only">Work with a small studio</div>
-      <div class="union__gradient gradient--yellow-green-right"></div>
+    <a href="#" class="union-btn glass-effect w-inline-block">
+      <!-- <div class="sr-only">Work with a small studio</div> -->
+      <!-- <div class="union__gradient gradient--yellow-green-right"></div> -->
       <div
         class="icon--union--large w-embed"
         style="
@@ -35,29 +35,19 @@ export default {};
 
 <style>
 .setting-btn-wrapper {
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
 }
 .union-btn {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  /* width: 5rem; */
+  /* height: 5rem; */
   display: flex;
   overflow: hidden;
-  width: 6.4rem;
-  height: 6.4rem;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
-  border-radius: 50%;
+  border-radius: 50% !important;
   background-color: hsla(0, 0%, 100%, 0.1);
 }
 .glass-effect {

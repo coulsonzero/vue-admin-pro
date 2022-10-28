@@ -1,11 +1,16 @@
 <template>
   <div class="wrapper">
+    <image-bg></image-bg>
+    <nav-back></nav-back>
     <h3>Button Demo</h3>
     <my-button></my-button>
   </div>
 </template>
 
 <script setup>
+import ImageBg from "../components/Animate/ImageBg.vue";
+import NavBack from "@/components/Button/NavBack.vue";
+
 import MyButton from "@/components/Button/MyButton.vue";
 </script>
 

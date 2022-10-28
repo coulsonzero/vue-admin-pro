@@ -2,6 +2,8 @@
   <img src="@/assets/images/bg.png" alt="" class="bg" />
 </template>
 
+<script>
+</script>
 
 <style>
 .bg {

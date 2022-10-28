@@ -21,7 +21,7 @@
 
 <script setup>
 import { RouterView } from "vue-router";
-import VideoBg from "./components/Animate/VideoBg.vue";
+import VideoBg from "@/components/Animate/VideoBg.vue";
 </script>
 
 

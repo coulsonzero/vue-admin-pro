@@ -23,7 +23,7 @@
 
       <chart-circle
         :percent="16"
-        :color="{ circle_color: '#ff9f00', circle_bg: '#776547' }"
+        :color="{ circle_color: '#74ff9a', circle_bg: '#444a3e' }"
       />
     </div>
 
