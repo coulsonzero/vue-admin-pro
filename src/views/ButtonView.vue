@@ -18,7 +18,7 @@ import NavButton from "@/components/Button/NavButton.vue";
 </script>
 
 
-<style>
+<style lang="scss" scoped>
 .wrapper {
   position: relative;
   width: 100%;

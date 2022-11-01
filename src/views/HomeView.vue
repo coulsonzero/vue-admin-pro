@@ -12,7 +12,8 @@ import ImageBg from "../components/Animate/ImageBg.vue";
 import NavBack from "@/components/Button/NavBack.vue";
 </script>
 
-<style>
+<style lang="scss" scoped>
+
 .home {
   display: flex;
   justify-content: center;
