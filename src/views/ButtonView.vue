@@ -4,14 +4,17 @@
     <nav-back></nav-back>
     <h3>Button Demo</h3>
     <my-button></my-button>
+
+    <nav-button></nav-button>
   </div>
 </template>
 
 <script setup>
-import ImageBg from "../components/Animate/ImageBg.vue";
+import ImageBg from "@/components/Animate/ImageBg.vue";
 import NavBack from "@/components/Button/NavBack.vue";
 
 import MyButton from "@/components/Button/MyButton.vue";
+import NavButton from "@/components/Button/NavButton.vue";
 </script>
 
 

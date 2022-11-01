@@ -10,7 +10,10 @@
       </keep-alive>
       <!-- 过渡动画：好像可有可无 -->
       <transition name="fade" mode="out-in">
-        <component v-if="!$route.meta.keepAlive" :is="Component" />
+        <div>
+          <image-bg></image-bg>
+          <component v-if="!$route.meta.keepAlive" :is="Component" />
+        </div>
       </transition>
     </router-view>
 
@@ -22,6 +25,7 @@
 <script setup>
 import { RouterView } from "vue-router";
 import VideoBg from "@/components/Animate/VideoBg.vue";
+import ImageBg from "@/components/Animate/ImageBg.vue";
 </script>
 
 

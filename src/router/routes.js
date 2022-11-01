@@ -56,6 +56,16 @@ const routes = [
 	//   name: "tab",
 	//   component: () => import("@/views/TabView.vue"),
 	// },
+	{
+		path: "/ele",
+		name: "element-plus",
+		component: () => import("@/views/ElePlusView.vue")
+	},
+	{
+		path: "/faq",
+		name: "Golang-FAQ",
+		component: () => import("@/views/FAQView.vue")
+	}
 ]
 
 

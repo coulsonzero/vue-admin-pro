@@ -50,7 +50,6 @@ const router = createRouter({
 
 ### router-view 无需刷新即可平滑切换
 
-
 **App.vue**
 
 > 使用以下动态路由视图替代默认视图
@@ -63,14 +62,17 @@ const router = createRouter({
   </keep-alive>
   <!-- 过渡动画：好像可有可无 -->
   <transition name="fade" mode="out-in">
-    <component v-if="!$route.meta.keepAlive" :is="Component" />
+	<div>
+		<component v-if="!$route.meta.keepAlive" :is="Component" />
+	</div>
   </transition>
 </router-view>
 ```
 
-> router/index.js新增以下代码
+> router/index.js 新增以下代码
 
 **router/index.js**
+
 ```js
 // 过渡动效
 router.afterEach((to, from) => {
@@ -133,4 +135,34 @@ export default defineConfig({
 	],
 	//...
 })
+```
+
+### [Vue warn]: Component inside <Transition> renders non-element root node that cannot be animated.
+
+```vue
+<transition name="fade" mode="out-in">
+<div>
+	<component v-if="!$route.meta.keepAlive" :is="Component" />
+</div>
+</transition>
+```
+
+### scoped
+
+> 使得 css 样式只作用于当前组件，对其他组件无效，使得组件之间的样式不互相污染，实现了样式的模块化。
+
+## element ui plus
+
+[element plus for vue3](https://element-plus.gitee.io/zh-CN/)
+
+**element plus conponents**
+
+```sh
+yarn add element-plus
+```
+
+**icons**
+
+```sh
+yarn add @element-plus/icons-vue
 ```
