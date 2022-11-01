@@ -737,6 +737,7 @@ body {
   letter-spacing: 1px;
   border: 1px solid #868686;
   background: transparent;
+  outline: none;
 }
 .dialog-container .q-answer:hover {
   border-color: #323232;
@@ -754,6 +755,7 @@ body {
   background: transparent;
   border-radius: 20px;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .dialog-container .dialog-confirm:hover {
@@ -776,6 +778,7 @@ body {
 .dialog-container .dialog-cancle svg {
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 .dialog-container .dialog-cancle svg path {
   fill: rgba(54, 54, 54, 0.4);
