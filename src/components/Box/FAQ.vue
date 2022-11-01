@@ -356,7 +356,7 @@ export default {
             name="question-title"
             v-model="question_title"
             class="q-title"
-            placeholder="Please enter a question title ?"
+            placeholder="Enter a question title "
           />
           <textarea
             v-model="question_answer"

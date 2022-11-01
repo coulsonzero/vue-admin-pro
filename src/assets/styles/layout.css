@@ -9,3 +9,12 @@
     place-items: center;
 }
 
+.text-color {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url("https://uploads-ssl.webflow.com/62fb2b148e8a9b6e4cec0dc0/631e4f6126ebf97ce73ed290_color-silver.png");
+    background-position: 0px 0px;
+    background-size: cover;
+    background-attachment: fixed;
+}
