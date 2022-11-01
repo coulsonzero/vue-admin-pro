@@ -1,0 +1,1 @@
+import{_ as t,r as o,o as a,e as n,w as s,b as _}from"./index.d4401952.js";const c={},r=_("div",{class:"nav-btn"},"Back",-1);function p(i,l,d,u,v,k){const e=o("router-link");return a(),n(e,{to:"nav"},{default:s(()=>[r]),_:1})}const B=t(c,[["render",p]]);export{B as N};
