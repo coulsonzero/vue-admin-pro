@@ -280,6 +280,9 @@ export default {
     dialog_open: false,
     question_title: "",
     question_answer: "",
+    row: {
+      data: [],
+    },
   }),
   methods: {
     toggleAccordion(id) {
@@ -289,24 +292,36 @@ export default {
       this.dialog_open = false;
       console.log(this.question_title);
       console.log(this.question_answer);
-
-      const row = {
+      let obj = {
         question: this.question_title,
         answer: this.question_answer,
         difficulty: "easy",
       };
-      this.faq.push(row);
+      this.row.data.push(obj);
+      this.faq.push(obj);
 
-      localStorage.setItem("faq", JSON.stringify(row));
+      localStorage.setItem("faq", JSON.stringify(this.row));
+    },
+    initFaq() {
+      try {
+        let faq = localStorage.getItem("faq");
+        let data = JSON.parse(faq).data;
+
+        data.forEach((item) => this.faq.push(item));
+        // localStorage.clear()
+      } catch (e) {
+        console.log("not found faq storge");
+      }
     },
     indent(s) {
-      // let sum = 0;
       let arr = s.split("");
       for (let i = 0; i < arr.length; i++) {
         if (arr[i] != " ") return i * 3 + "px";
       }
-      // return sum  + "px";
     },
+  },
+  mounted() {
+    this.initFaq();
   },
 };
 </script>
@@ -787,7 +802,7 @@ body {
 .dialog-container .dialog-cancle:hover path {
   fill: rgba(54, 54, 54, 1);
 }
-@media screen and(max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .btn-dialog {
     width: 360px;
     height: 360px;

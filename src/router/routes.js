@@ -41,10 +41,10 @@ const routes = [
 	//   component: () => import("@/views/AboutView.vue"),
 	// },
 	{
-	  path: "/button",
-	  name: "button",
-	  // lazy-loaded
-	  component: () => import("@/views/ButtonView.vue"),
+		path: "/button",
+		name: "button",
+		// lazy-loaded
+		component: () => import("@/views/ButtonView.vue"),
 	},
 	// {
 	//   path: "/sidebar",
@@ -59,13 +59,18 @@ const routes = [
 	{
 		path: "/ele",
 		name: "element-plus",
-		component: () => import("@/views/ElePlusView.vue")
+		component: () => import("@/views/ElePlusView.vue"),
 	},
 	{
 		path: "/faq",
 		name: "Golang-FAQ",
-		component: () => import("@/views/FAQView.vue")
-	}
+		component: () => import("@/views/FAQView.vue"),
+	},
+	{
+		path: "/api",
+		name: "Api",
+		component: () => import("@/views/ApiView.vue"),
+	},
 ]
 
 
