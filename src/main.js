@@ -7,6 +7,10 @@ import './assets/main.css'
 // axios
 import axios from 'axios'
 
+// mockjs模拟接口数据
+import "./mock/index"
+
+
 const app = createApp(App)
 
 // 基准路径

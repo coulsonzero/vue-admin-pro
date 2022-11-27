@@ -605,6 +605,11 @@ combined-stream@^1.0.6, combined-stream@^1.0.8, combined-stream@~1.0.6:
   dependencies:
     delayed-stream "~1.0.0"
 
+commander@*:
+  version "9.4.1"
+  resolved "https://repo.huaweicloud.com/repository/npm/commander/-/commander-9.4.1.tgz#d1dd8f2ce6faf93147295c0df13c7c21141cfbdd"
+  integrity sha512-5EEkTNyHNGFPD2H+c/dXXfQZYa/scCKasxWcXJaWnNJ99pnQN9Vnmqow+p+PlFPE63Q6mThaZws1T+HxfpgtPw==
+
 concat-map@0.0.1:
   version "0.0.1"
   resolved "https://repo.huaweicloud.com/repository/npm/concat-map/-/concat-map-0.0.1.tgz"
@@ -1640,6 +1645,13 @@ mlly@^0.5.16:
     pathe "^0.3.8"
     pkg-types "^0.3.5"
     ufo "^0.8.5"
+
+mockjs@^1.1.0:
+  version "1.1.0"
+  resolved "https://repo.huaweicloud.com/repository/npm/mockjs/-/mockjs-1.1.0.tgz#e6a0c378e91906dbaff20911cc0273b3c7d75b06"
+  integrity sha512-eQsKcWzIaZzEZ07NuEyO4Nw65g0hdWAyurVol1IPl1gahRwY+svqzfgfey8U8dahLwG44d6/RwEzuK52rSa/JQ==
+  dependencies:
+    commander "*"
 
 ms@2.1.2, ms@^2.0.0:
   version "2.1.2"

@@ -9,9 +9,8 @@ import qs from 'qs'
 
 // 封装api调用
 import { apiGetDemo, apiPostDemo, apiPostDemo2 } from '@/api/apiview.js'
-
 export default {
-    created() {
+    mounted() {
         console.log("hello api view")
         // this.apiGetTest()
         // this.apiGetTest2()
@@ -24,6 +23,13 @@ export default {
         // apiPostDemo2()
 
         // this.apiGetHttp()
+
+        // this.apiGeiMock()
+
+        axios.get('/mock/getData').then(res => {
+            console.log(res)
+        })
+
     },
 
     methods: {
@@ -81,6 +87,11 @@ export default {
         },
         async apiGetHttp() {
             await this.$http.get("/user").then(res => {
+                console.log(res)
+            })
+        },
+        apiGeiMock() {
+            axios.get('/mock/getData').then(res => {
                 console.log(res)
             })
         }
