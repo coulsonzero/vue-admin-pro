@@ -4,15 +4,26 @@
 
 <script>
 import axios from 'axios'
+// post请求需添加qs
 import qs from 'qs'
+
+// 封装api调用
+import { apiGetDemo, apiPostDemo, apiPostDemo2 } from '@/api/apiview.js'
 
 export default {
     created() {
         console.log("hello api view")
-        this.apiGetTest()
-        this.apiGetTest2()
+        // this.apiGetTest()
+        // this.apiGetTest2()
         // this.apiPostTest()
         // this.apiPostTest2()
+
+
+        // apiGetDemo()
+        // apiPostDemo()
+        // apiPostDemo2()
+
+        // this.apiGetHttp()
     },
 
     methods: {
@@ -67,6 +78,11 @@ export default {
                 'username': 'kopp',
                 'password': 'admin123'
             }));
+        },
+        async apiGetHttp() {
+            await this.$http.get("/user").then(res => {
+                console.log(res)
+            })
         }
     },
 }
