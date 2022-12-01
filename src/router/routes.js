@@ -46,11 +46,11 @@ const routes = [
 		// lazy-loaded
 		component: () => import("@/views/ButtonView.vue"),
 	},
-	// {
-	//   path: "/sidebar",
-	//   name: "sidebar",
-	//   component: () => import("@/views/SideBarView.vue"),
-	// },
+	{
+	  path: "/sidebar",
+	  name: "sidebar",
+	  component: () => import("@/views/SideBarView.vue"),
+	},
 	// {
 	//   path: "/tab",
 	//   name: "tab",
