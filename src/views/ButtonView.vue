@@ -7,7 +7,7 @@
 
     <nav-button></nav-button>
 
-    <button-shadow></button-shadow>
+    <!-- <button-shadow></button-shadow> -->
   </div>
 </template>
 
@@ -18,7 +18,7 @@ import NavBack from "@/components/Button/NavBack.vue";
 import MyButton from "@/components/Button/MyButton.vue";
 import NavButton from "@/components/Button/NavButton.vue";
 
-import ButtonShadow from "@/components/Button/ButtonShadow";
+// import ButtonShadow from "@/components/Button/ButtonShadow";
 </script>
 
 

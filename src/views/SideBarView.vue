@@ -6,7 +6,7 @@
 
 <script setup>
 import SideMenu from "../components/SideBar/SideMenu.vue";
-import MainPage from "../components/HomePage/MainPage.vue";
+// import MainPage from "../components/HomePage/MainPage.vue";
 </script>
 
 <style lang="scss" scoped>
