@@ -20,7 +20,7 @@ export default {
       {descript: "Our old building office is quite nice.", place: "Office", code: "01"},
       {descript: "However, (almost) all of us also do hybrid work (and it works.)", place: "Workplace", code: "02"},
       {descript: "Our work is diverse.", place: "Projects", code: "03"},
-      {descript: "OOvertime is and will remain an exception.", place: "Workload", code: "04"},
+      {descript: "Overtime is and will remain an exception.", place: "Workload", code: "04"},
       {descript: "Sometimes we do sports together.", place: "Teamevents", code: "05"},
       {descript: "Or we meet for a vino.", place: "Dolce Vita", code: "06"},
       {descript: "(But it's not a must)", place: "Easyyy", code: "07"},

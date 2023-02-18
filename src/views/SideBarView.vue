@@ -1,15 +1,12 @@
 <template>
   <div class="page-wrapper"></div>
   <side-menu class="side-menu"></side-menu>
-  <main-page class="main-page">
-
-  </main-page>
+  <!-- <main-page class="main-page"> </main-page> -->
 </template>
 
 <script setup>
 import SideMenu from "../components/SideBar/SideMenu.vue";
 import MainPage from "../components/HomePage/MainPage.vue";
-
 </script>
 
 <style lang="scss" scoped>

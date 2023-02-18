@@ -1,5 +1,3 @@
-import SideBar from '@/components/SideBar/SideBar.vue';
-import gridIcon from '@/assets/icons/grid.svg';
 <template>
   <div class="sidebar-wrapper">
     <div class="sidebar sidebar-flex">
@@ -8,12 +6,6 @@ import gridIcon from '@/assets/icons/grid.svg';
         <div class="logo-title text-color">Tool</div>
       </div>
       <div class="svg-wrapper">
-        <!-- <div @click="togglePage"><img class="icon-svg" src="@/assets/icons/grid.svg" alt="" /></div>
-        <div @click="togglePage"><img class="icon-svg" src="@/assets/icons/message.svg" alt="" /></div>
-        <div @click="togglePage"><img class="icon-svg" src="@/assets/icons/pay.svg" alt="" /></div>
-        <div @click="togglePage"><img class="icon-svg" src="@/assets/icons/task.svg" alt="" /></div>
-        <div @click="togglePage"><img class="icon-svg" src="@/assets/icons/edit.svg" alt="" /></div> -->
-
         <a
           href="#sidebar"
           class="svg-container"
