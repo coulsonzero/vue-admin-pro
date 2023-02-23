@@ -11,7 +11,6 @@
       <!-- 过渡动画：好像可有可无 -->
       <transition name="fade" mode="out-in">
         <div>
-          <image-bg></image-bg>
           <component v-if="!$route.meta.keepAlive" :is="Component" />
         </div>
       </transition>
@@ -23,9 +22,11 @@
 </template>
 
 <script setup>
-import { RouterView } from "vue-router";
+import NavBack from "@/components/Button/NavBack.vue";
 import VideoBg from "@/components/Animate/VideoBg.vue";
 import ImageBg from "@/components/Animate/ImageBg.vue";
+
+import { RouterView } from "vue-router";
 </script>
 
 

@@ -6,7 +6,7 @@
     <!-- button -->
     <div class="ele-container">
       <h3 class="sub-title">Button</h3>
-      <div class="flex-center">
+      <div class="flex-center flex-row">
         <el-button type="primary">Primary</el-button>
         <el-button type="success" :icon="Check" circle />
       </div>
@@ -39,7 +39,14 @@
       </div>
     </div>
 
-
+    <div class="ele-container">
+      <h3 class="sub-title">Dialog</h3>
+      <div class="flex-center">
+        <table-ele></table-ele>
+        <table-ele-filter></table-ele-filter>
+        <table-ele-option></table-ele-option>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -53,6 +60,15 @@ import { Check } from "@element-plus/icons-vue";
 // dialog
 import { ref } from "vue";
 import { CircleCloseFilled } from "@element-plus/icons-vue";
+
+// table
+import TableEle from "@/components/Table/TableEle.vue";
+
+import TableEleFilter from "@/components/Table/TableEleFilter.vue";
+
+import TableEleOption from "@/components/Table/TableEleOption.vue";
+
+
 const visible = ref(false);
 </script>
 
@@ -78,4 +94,15 @@ const visible = ref(false);
   text-align: center;
   margin-bottom: 20px;
 }
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
 </style>

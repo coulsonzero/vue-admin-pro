@@ -1,10 +1,10 @@
 <template>
-  <image-bg></image-bg>
+  <!-- <image-bg></image-bg> -->
 
   <nav-back></nav-back>
 
   <div class="page-section">
-    <div class="title">Charts Demo</div>
+    <div class="title">Charts</div>
 
     <div class="flex-container">
       <chart-circle

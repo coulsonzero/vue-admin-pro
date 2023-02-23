@@ -19,11 +19,10 @@ export default {
       },
       {
         question: "defer 的执行顺序 ? (基本必问)",
-        answer: `1) 多个defer的执行顺序: 栈"后进先出";\n
-        2) defer与return的执行时机: defer在return之后执行，但在函数退出之前，defer可以修改返回值\n
-          a) 在return赋值返回值之后\n
-          b) 调用defer执行收尾工作\n
-          c) RET指令执行前 (最后RET指令携带返回值退出函数)\n3) os.Exit(1)退出进程时，已声明的defer将不再被执行\n
+        answer: `
+        1) 多个defer的执行顺序: 栈"后进先出";\n
+        2) defer与return的执行时机: defer在return之后执行，但在函数退出之前，defer可以修改返回值(通过defer func(){}()的方式)\n
+        3) os.Exit()退出进程时，已声明的defer将不再被执行\n
         `,
         difficulty: "medium",
       },

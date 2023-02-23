@@ -1,15 +1,11 @@
 <template>
   <div class="page">
     <table-line class="my-table"></table-line>
-    <calendar></calendar>
 </div>
 </template>
 
 <script>
 import TableLine from "@/components/Table/TableLine.vue";
-import Calendar from "../Calendar/Calendar.vue";
-export default {
-  components: { Calendar },};
 </script>
 
 <style lang="scss" scoped>

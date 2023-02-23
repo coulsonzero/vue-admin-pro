@@ -35,11 +35,6 @@ const routes = [
 		component: () => import("@/views/TableView.vue"),
 		meta: {keepAlive: true},
 	},
-	// {
-	//   path: "/about",
-	//   name: "about",
-	//   component: () => import("@/views/AboutView.vue"),
-	// },
 	{
 		path: "/button",
 		name: "button",
@@ -66,11 +61,11 @@ const routes = [
 		name: "Golang-FAQ",
 		component: () => import("@/views/FAQView.vue"),
 	},
-	{
-		path: "/api",
-		name: "Api",
-		component: () => import("@/views/ApiView.vue"),
-	},
+	// {
+	// 	path: "/api",
+	// 	name: "Api",
+	// 	component: () => import("@/views/ApiView.vue"),
+	// },
 ]
 
 

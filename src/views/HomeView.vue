@@ -2,7 +2,8 @@
   <div class="home">
     <image-bg></image-bg>
     <nav-back></nav-back>
-    <Slider />
+    <Slider></Slider>
+
   </div>
 </template>
 
