@@ -13,7 +13,6 @@ const routes = [
 	{
 		path: "/nav",
 		name: "nav",
-		// component: () => import("@/views/NavView.vue"),
 		component: NavView,
 		meta: {keepAlive: true},
 	},
@@ -46,11 +45,6 @@ const routes = [
 	  name: "sidebar",
 	  component: () => import("@/views/SideBarView.vue"),
 	},
-	// {
-	//   path: "/tab",
-	//   name: "tab",
-	//   component: () => import("@/views/TabView.vue"),
-	// },
 	{
 		path: "/ele",
 		name: "element-plus",
@@ -61,11 +55,6 @@ const routes = [
 		name: "Golang-FAQ",
 		component: () => import("@/views/FAQView.vue"),
 	},
-	// {
-	// 	path: "/api",
-	// 	name: "Api",
-	// 	component: () => import("@/views/ApiView.vue"),
-	// },
 ]
 
 

@@ -7,17 +7,6 @@ const router = createRouter({
   routes,
 });
 
-
-// // 导航守卫
-// router.beforeEach((to, from) => {
-// 	// ...
-// 	// 返回 false 以取消导航
-// 	// return false
-//   if (to.name !== "nav") next({name: "nav"})
-// 	else next()
-// })
-
-
 // 过渡动效
 router.afterEach((to, from) => {
 	const toDepth = to.path.split("/").length
