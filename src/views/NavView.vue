@@ -1,17 +1,11 @@
 <template>
   <image-bg></image-bg>
-  <!-- <setting-button></setting-button> -->
+
   <header>
     <div class="wrapper">
       <h1>最 美 夜 航 星</h1>
       <nav class="nav-router glass-nav">
-        <router-link
-          :to="item.path"
-          class="nav-item"
-          v-for="(item, index) in links"
-          :key="index"
-          >{{ item.name }}</router-link
-        >
+        <router-link :to="item.path" class="nav-item" v-for="(item, index) in links" :key="index">{{ item.name }}</router-link>
       </nav>
     </div>
   </header>

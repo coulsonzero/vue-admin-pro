@@ -1,6 +1,8 @@
 <template>
   <div class="app">
-    <video-bg></video-bg>
+    <!-- <video-bg></video-bg> -->
+    <image-bg></image-bg>
+    <nav-back></nav-back>
 
     <!-- 动态过渡 -->
     <router-view v-slot="{ Component }">

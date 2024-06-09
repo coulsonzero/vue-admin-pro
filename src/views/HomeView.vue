@@ -9,7 +9,7 @@
 
 <script setup>
 import Slider from "@/components/Box/Slider.vue";
-import ImageBg from "../components/Animate/ImageBg.vue";
+import ImageBg from "@/components/Animate/ImageBg.vue";
 import NavBack from "@/components/Button/NavBack.vue";
 </script>
 
