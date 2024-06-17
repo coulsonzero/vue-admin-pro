@@ -16,13 +16,13 @@ import MainPage from "@/components/HomePage/MainPage.vue";
 <style scoped>
 
 .main-page {
-  width: calc(100% - 150px);
+  width: calc(100% - 130px);
   float: right;
   background: #323232;
 }
 
 .side-menu {
-  width: 200px;
+  width: 130px;
   float: left;
   background: #323232;
 }

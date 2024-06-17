@@ -4,9 +4,12 @@
       <HeaderWrapper></HeaderWrapper>
     </header>
     <div class="content-wrapper">
-      <h1>Chat</h1>
-      <ChatWrapper></ChatWrapper>
+      <div class="card-wrapper">
+        <CardWrapper></CardWrapper>
+        <ChatWrapper></ChatWrapper>
+      </div>
       <Product />
+      <Card />
     </div>
 </div>
 </template>
@@ -40,5 +43,9 @@
     background-color: #fff;
     scroll-behavior: smooth;
     overflow: scroll;
+}
+
+.card-wrapper {
+  display: flex;
 }
 </style>
