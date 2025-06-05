@@ -1,7 +1,4 @@
 <template>
-  <!-- <image-bg></image-bg> -->
-  <!-- <nav-back></nav-back> -->
-
   <div class="page-section">
     <div class="title">Charts</div>
 

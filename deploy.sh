@@ -13,10 +13,10 @@ echo 'vue.coulsonzero.top' > CNAME
 
 git init
 git add -A
-git commit -m 'deploy vue-admin-pro'
+git commit -m 'deploy vue-blog'
 
 # 如果发布到https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:coulsonzero/vue-admin-pro.git master:gh-pages
+git push -f git@github.com:coulsonzero/vue-admin-pro.git main:gh-pages
 
 cd -
 

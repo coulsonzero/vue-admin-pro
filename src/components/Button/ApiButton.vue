@@ -12,20 +12,6 @@ import { apiGetDemo, apiPostDemo, apiPostDemo2 } from '@/api/apiview.js'
 export default {
     mounted() {
         console.log("hello api view")
-        // this.apiGetTest()
-        // this.apiGetTest2()
-        // this.apiPostTest()
-        // this.apiPostTest2()
-
-
-        // apiGetDemo()
-        // apiPostDemo()
-        // apiPostDemo2()
-
-        // this.apiGetHttp()
-
-        // this.apiGeiMock()
-
         axios.get('/mock/getData').then(res => {
             console.log(res)
         })
@@ -47,29 +33,6 @@ export default {
             })
         },
         async apiPostTest() {
-            /* ======= 请求结果全为null，post请求格式错误 ======= */
-
-            // axios({
-            //     method: 'post',
-            //     url: 'http://localhost:8080/user',
-            //     data: {
-            //         username: 'raopp',
-            //         password: 'raopper123'
-            //     }
-            // })
-
-            // axios.post('http://localhost:8080/user', {
-            //     username: 'raopp',
-            //     password: 'raopper123'
-            // })
-
-            /* ======= 需要将对对象转为json ======= */
-
-            // var params = new URLSearchParams();
-            // params.append('username','raoppe');
-            // params.append('password','123456');
-            // axios.post('http://localhost:8080/user', params)
-
             var params = new URLSearchParams();
             params.append('username','rtqi');
             params.append('password','123456');
